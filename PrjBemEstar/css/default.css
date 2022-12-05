@@ -1,0 +1,32 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+html {font-family: 'Quicksand', sans-serif;}
+h1 { color: #A67153;}
+footer address { position: absolute; top: 95%; left: 15%; color: #A67153;}
+/*PAGINA LOGIN*/
+#Login i {color: #A67153;}
+#Login { position: absolute; background-color: none; width: 30%; height: 100%; left: 0%; border: none; color: white; background-color: #F2CFBB;}
+#Login #logar { display: block; position: absolute; margin-top: 10%; margin-left: 18%; top: 30%; left: 5%; width: 50%; color: brown; text-align:center; animation: fadeIn; animation-duration:1s;}
+#IMC { position: absolute; width: 70%; height: 100%; left: 30%; border: none;}
+#logar #txtSenha, #logar #txtLogin{ border: none; box-shadow: 0 0 3px 0 #000; margin: 2%;}
+#logar #lblErro {color: red;}
+#btnAcessar {border: none; margin-top: 10%; margin-bottom: 10%; margin-left: 2%; cursor: pointer; font-size: large; width: 200px; height: 30px; border-radius: 5px; background-color: #A67153; color: #F2CFBB;}
+#btnAcessar:hover {background-color: #D99E89; color:white;}
+#LOGO {position: absolute; top: 5%; left: 0%; width: 100%;}
+#Cliente{margin:1%; text-decoration:none; color:#A67153; font-size: medium;}
+#Cliente:hover{color:white; cursor:pointer;}
+/*PAGINA CADASTRAR*/
+#Login i { color: #A67153;}
+#Login #ParteCadastrar { display:none; position: absolute; margin-top: 10%; margin-left: 18%; top: 30%; left: 5%; width: 50%; color: brown; text-align:center; animation: fadeIn; animation-duration:1s;}
+#Login #lblErroCadastrar{color: red;}
+#txtNome, #txtSobrenome, #txtLoginCadastrar, #txtSenhaCadastrar, #txtDataNasc, #txtCel, #txtTipo /*#txtCredencial*/ { border: none; box-shadow: 0 0 3px 0 #000;  margin: 3%;}
+#btnVoltar { border: none; margin-top: 1%; margin-bottom: 10%; margin-left: 2%; cursor: pointer; font-size: large; width: 90px; height: 30px; border-radius: 5px; background-color: #A67153; color: #F2CFBB;}
+#btnCadastrar { border: none; margin-top: 1%; margin-bottom: 10%; margin-left: 2%; cursor: pointer;  font-size: large; width: 100px; height: 30px; border-radius: 5px; background-color: #A67153; color: #F2CFBB;}
+#btnVoltar:hover, #btnCadastrar:hover { background-color: #D99E89; color:white;}
+#LOGO { position: absolute; top: 5%; left: 0%; width: 100%;}
+#IMC { position: absolute; width: 70%; height: 100%; left: 30%; border: none;}
+
+@media screen and (min-width:1900px) {
+footer address {left: 25%;}
+#Cliente {margin:5%;}
+#btnAcessar {width: 250px; height: 30px;}
+}

@@ -1,0 +1,85 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+html {font-family: 'Quicksand', sans-serif;}
+body {background-color: #F2CFBB;}
+hr { height: 10px; background-color: #D99E89; margin-top: 0%; border: none;}
+footer { display:none; position: fixed; top: 95%; color: #F2CFBB; background-color:#A67153; width:100%; height:10%;}
+footer p {text-align:center; margin:0%;}
+#menu i { color: #F2CFBB;}
+#profissional #menu { display: flex; flex-direction: row; justify-content: center; align-items:center; list-style: none; background-color: #A67153; margin:0%;}
+#linkInicio, #linkAvaliacao, #linkIMC, #linkPerfil, #linkDieta, #linkCadastrarPro,  #linkSair { text-decoration: none; color: #F2CFBB; margin: 1%; cursor: pointer;}
+#linkInicio:hover, #linkAvaliacao:hover, #linkIMC:hover, #linkPerfil:hover, #linkDieta:hover, #linkCadastrarPro:hover, #linkSair:hover {color: white;}
+#DADOSLOGIN {display:none;}
+/*INICIO*/
+#FUNDO {  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 100px; animation: fadeIn; animation-duration: 3s; color: #A67153;}
+#FUNDO hr { height: 5px; margin: 1%; border-radius: 3px;}
+#FUNDO h1 { margin-left: 10%;}
+#FUNDO h3{ font-size: 40%;}
+/*PAGINA AVALIAÇÃO*/
+#pagAvaliacao {display: none; flex-direction:row; position: absolute; top: 48%; left: 50%; transform: translate(-50%, -50%); animation: fadeIn; animation-duration: 0.5s;text-align:center;}
+#pagAvaliacao i {color: #A67153;}
+#pagAvaliacao h1, #pagAvaliacao h2 {color:#A67153; margin:1%; font-size:x-large;}
+#avaliacao{margin-right:15%; border: 2px solid #A67153; border-radius:5px; padding:3%;}
+#buscarCliente{margin-left:0%; border: 2px solid #A67153; border-radius:5px; padding:3%;}
+#txtNumCliente, #txtNumPro, #txtDtAvaliacao, #txtPesoCliente, #txtAlturaCliente {border: 1px solid #A67153; border-radius:3px; color:#A67153; margin: 2%; text-align:center;}
+#txtNomeBuscarCliente {border: 1px solid #A67153; border-radius:3px; color:#A67153; margin: 2%; }
+#btnCadastrarAvaliacao, #btnBuscarCliente{border: none; margin:1%; color:#F2CFBB; cursor: pointer;  font-size: medium; width: 210px; height: 30px; border-radius: 5px; background-color: #A67153;}
+#btnCadastrarAvaliacao:hover, #btnBuscarCliente:hover{background-color: #D99E89; color:white;}
+#lblErroAvaliacoes{color:red;}
+/*PAGINA IMC*/
+#pagIMC{display: none; position: absolute; top: 55%; left: 50%; transform: translate(-50%, -50%); animation: fadeIn; animation-duration: 0.5s; text-align:center; }
+#pagIMC h1{color: #A67153; margin-bottom:2%; margin-left:30%; font-size:x-large; border-radius:5px; width:43%; font-size:large;}
+#figure { display:flex; flex-direction:row; align-items:center; position: relative; left:0%; width: 1000px;}
+#abaixo, #normal, #acima, #obesidade1, #obesidade2 {opacity: 0.3; width: 15%; margin-left:0%}
+#container { display: flex; flex-direction:row; margin-bottom:2%;}
+#calculoIMC{ text-align:center; width:43%; margin-left:10%;}
+#calculoIMC h1{color: #A67153; }
+#buscar {margin-left:1%; }
+#buscar i {color: #A67153;}
+#calculoIMC i, #resultado i{color: #A67153;}
+#txtPeso, #txtAltura, #txtIdade, #txtResultadoIMC, #txtNumClienteDieta, #txtNumProDieta, #txtNumAvaliacao, #txtDtDieta, #txtRestAlim, #txtDieta, #txtNomeAvaliacoes {border: 1px solid #A67153; border-radius:3px; color:#A67153; margin: 2%; text-align:center;}
+#txtResultadoIMC{border: none; font-size:x-large; margin-bottom:5%; border: 1px solid #A67153; border-radius:3px; text-align:center;}
+#lblIMC{font-size:x-large; color:#A67153;}
+#lblAviso{font-size:large; color:#A67153;}
+#btnAvaliacoes, #btnCadastrarDieta{border: none; margin:1%; color:#F2CFBB; cursor: pointer;  font-size: medium; width: 200px; height: 30px; border-radius: 5px; background-color: #A67153;}
+#btnAvaliacoes:hover, #btnCadastrarDieta:hover{background-color: #D99E89; color:white;}
+#container2 {display: flex; text-align:center; margin-left:5%;}
+#container2 i {color: #A67153;}
+#descricao{display:flex; flex-direction:row;}
+#lblErroDieta{color:red;}
+#cadastrarDieta{border: 2px solid #A67153; border-radius:5px; padding:2%;}
+#buscar{border: 2px solid #A67153; border-radius:5px; padding:2%;}
+/*PAGINA DIETA*/
+#pagDieta{display: none; position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%); animation: fadeIn; animation-duration: 0.5s; text-align:center;}
+#pagDieta i{color:#A67153;}
+#pagDieta h1{color:#A67153; margin:1%; font-size:x-large;}
+#pagDieta #areaBuscar{display:flex; flex-direction:row; margin:2%;}
+#lblDieta{color:#A67153; margin:5%;}
+#txtNomeBuscarDieta{border: none; margin: 2%; text-align:center;}
+#btnBuscar{border: none; margin:1%; color:#F2CFBB; cursor: pointer;  font-size: medium; width: 100px; height: 35px; border-radius: 5px; background-color: #A67153;}
+#btnBuscar:hover{background-color: #D99E89; color:white;}
+#gvDietas{ margin-top:5%; position:absolute;}
+#areaBuscar{}
+/*PAGINA PERFIL*/
+#pagPerfil{display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); animation: fadeIn; animation-duration: 0.5s; text-align:center;}
+#pagPerfil i { color: #A67153;}
+#pagPerfil h1{color:#A67153; margin:5%; font-size:x-large;}
+#pagPerfil span{color:#A67153; font-size:medium}
+#pagPerfil #lblErroAtualizacao{color: #A67153; font-size:small; margin:2%;}
+#txtNomeAtualizarPro, #txtSobrenomeAtualizarPro, #txtCredencialAtualizarPro, #txtLoginAtualizarPro, #txtSenhaAtualizarPro, #txtDataNascAtualizarPro, #txtCelAtualizarPro, #txtPerfilAtualizarPro { border: none; box-shadow: 0 0 3px 0 #000;  margin: 3%; text-align:center;}
+#lblNomeAtualizarPro, #lblSobrenomeAtualizarPro, #lblCredencialAtualizarPro, #lblLoginAtualizarPro, #lblSenhaAtualizarPro, #lblDataNascAtualizarPro, #lblCelAtualizarPro { color:#A67153;}
+#btnAtualizar { border: none; margin-bottom: 1%; margin-top: 1%; margin-left: 1%;   cursor: pointer;  font-size: large; width: 200px; height: 30px; border-radius: 5px; background-color: #A67153; color: #F2CFBB;}
+#btnAtualizar:hover {background-color: #D99E89; color:white;}
+#perfilAtualizarPro{display:none;}
+/*PAGINA CADASTRAR PROFISSIONAL*/
+#CadastrarProfissional{display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); animation: fadeIn; animation-duration: 0.5s; text-align:center;}
+#CadastrarProfissional i { color: #A67153;}
+#CadastrarProfissional h1{color:#A67153; margin:5%; font-size:x-large;}
+#CadastrarProfissional #lblErroCadastrarPro{color: red; margin:2%;}
+#txtNomeCadastrarPro, #txtSobrenomeCadastrarPro, #txtCredencialCadastrarPro, #txtLoginCadastrarPro, #txtSenhaCadastrarPro, #txtDataNascCadastrarPro, #txtCelCadastrarPro, #DropPerfilCadastrarPro { border: none; box-shadow: 0 0 3px 0 #000;  margin: 3%; text-align:center;}
+#lblNomeCadastrarPro, #lblSobrenomeCadastrarPro, #lblCredencialCadastrarPro, #lblLoginCadastrarPro, #lblSenhaCadastrarPro, #lblDataNascCadastrarPro, #lblCelCadastrarPro, #lblPerfilCadastrarPro { color:#A67153;}
+#btnCadastrarPro { border: none; margin-bottom: 1%; margin-top: 1%; margin-left: 1%;   cursor: pointer;  font-size: large; width: 300px; height: 30px; border-radius: 5px; background-color: #A67153; color: #F2CFBB;}
+#btnCadastrarPro:hover {background-color: #D99E89; color:white;}
+@media screen and (min-width:1900px) {
+
+}
+
